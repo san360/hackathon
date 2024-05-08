@@ -1,0 +1,22 @@
+Theory
+---------------
+- Portal overview
+- Container, Kubernetes and AKS 
+
+Development
+---------------
+Docker Desktop, Kuberntes enabled, WSL integration
+Sample app (api based) deployment to local kubernetes
+ - View logs of the application
+ - Integration with application Insight (use copilot to show app insight integration)
+- Show usage of kubectl commands
+Sample app deployment to AKS
+View logs of Pod
+
+Deploy app to 
+- Azure function
+- Azure container apps
+
+We can show logs of app for function and container apps 
+
+Azure migrate overview (App CAT)
