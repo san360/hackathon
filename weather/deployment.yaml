@@ -25,6 +25,7 @@ kind: Service
 metadata:
   name: weather-service
 spec:
+  type: LoadBalancer
   selector:
     app: weather-service
   ports:
