@@ -8,6 +8,7 @@
 az group create -l NorthEurope -n jb-k8s-hackathon-rg
 
 ### Deploy template with in-line parameters
+```
 az deployment group create -g jb-k8s-hackathon-rg  --template-uri https://github.com/Azure/AKS-Construction/releases/download/0.10.5/main.json --parameters \
 	resourceName=jb-k8s-hackathon \
 	agentCount=1 \
@@ -19,6 +20,7 @@ az deployment group create -g jb-k8s-hackathon-rg  --template-uri https://github
 	retentionInDays=30 \
 	fileCSIDriver=false \
 	diskCSIDriver=false
+```
 
 ### Get credentials for your new AKS cluster & login (interactive)
 az aks get-credentials -g jb-k8s-hackathon-rg -n aks-jb-k8s-hackathon
