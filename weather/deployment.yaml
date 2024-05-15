@@ -15,8 +15,8 @@ spec:
         app: weather-service
     spec:
       containers:
-      - name: change-this.azurecr.io/weather-service
-        image: weather
+      - name: weather-service
+        image: crjbk8shackathon4f5r2s7bn4b76.azurecr.io/weather
         ports:
         - containerPort: 80
 ---
