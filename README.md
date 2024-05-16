@@ -5,7 +5,9 @@
 
 # AKS Cluster setup
 ### Create Resource Group
+```
 az group create -l NorthEurope -n jb-k8s-hackathon-rg
+```
 
 ### Deploy template with in-line parameters
 ```
@@ -21,11 +23,12 @@ az deployment group create -g jb-k8s-hackathon-rg  --template-uri https://github
 	fileCSIDriver=false \
 	diskCSIDriver=false
 ```
-
 ### Get credentials for your new AKS cluster & login (interactive)
+```
 az aks get-credentials -g jb-k8s-hackathon-rg -n aks-jb-k8s-hackathon
-
+```
 ### Get nodes from kubernetes
+```
 kubectl get nodes
-
+```
 ![image](https://github.com/san360/hackathon/assets/6613457/c6dcf740-3593-4723-9c82-6eec268730b3)
